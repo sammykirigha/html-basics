@@ -1,11 +1,9 @@
-
-
+/* end nav css */
 .body {
   margin: 0px;
 }
 
 /* start nav css */
-
 .nav-bar {
   background-color: rgb(250, 247, 247);
   display: flex;
@@ -35,40 +33,29 @@
   height: 350px;
   margin-top: 50px;
 }
-.contact-us {
-  background-color: green;
-  height: 350px;
-}
 
-/* end nav css */
 
 
 /* start home css */
-
-.home-container{
-  margin-top: 25px;
+.home-container {
+  background-color: antiquewhite;
+  margin: 25px;
   padding: 50px;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.left{
+/* css left start */
+.left {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   width: 85%;
 }
 
-.right{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: aqua; */
-
-}
-
-.image-container{
+.image-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -76,20 +63,31 @@
   padding: 20px;
   border-radius: 15px;
 }
+/* css left end */
 
-h1{
+
+.right {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+h1 {
   font-size: 25px;
   font-weight: bold;
 }
 
-.description{
+.description {
   font-size: 23px;
   line-height: 25px;
 }
 
-.button{
+.button {
   padding: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(0, 195, 255);
   border-radius: 15px;
   border-style: none;
@@ -97,3 +95,77 @@ h1{
 }
 
 /* end home css */
+
+
+/* start contact us css */
+.contact-us {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  /* background-color: green; */
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.form{
+  border: 1px solid gray;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.names,
+.contact{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px;
+}
+
+.first-name,
+.last-name,
+.phone,
+.email{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.first-name-input,
+.last-name-input,
+.email-input,
+.phone-input{
+  height: 40px;
+  width: 90%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.message{
+  width: 90%;
+}
+
+.text-area{
+  width: 100% !important;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+.form-button{
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  background-color: rgb(0, 195, 255);
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+  margin-left: 20px;
+  height: 35px;
+  width: 100px;
+}
+
+/* end contact us css */

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Web Page</title>
   </head>
@@ -33,16 +35,17 @@
         <div class="left">
           <div class="image-container">
             <img
-              src="images/image-one.jpg"
+              src="public/images/image-one.jpg"
               alt="image-one"
               height="300"
               width="350"
             />
             <span>Price: <strong>Ksh 700</strong></span>
           </div>
+
           <div class="image-container">
             <img
-              src="images/image-two.jpg"
+              src="public/images/image-two.jpg"
               alt="image-two"
               height="300"
               width="350"
@@ -51,7 +54,7 @@
           </div>
           <div class="image-container">
             <img
-              src="images/image-three.webp"
+              src="public/images/image-three.webp"
               alt="image-three"
               height="300"
               width="350"
@@ -60,7 +63,7 @@
           </div>
           <div class="image-container">
             <img
-              src="images/image-four.webp"
+              src="public/images/image-four.webp"
               alt="image-four"
               height="300"
               width="350"
@@ -69,7 +72,7 @@
           </div>
           <div class="image-container">
             <img
-              src="images/image-five.jpg"
+              src="public/images/image-five.jpg"
               alt="image-five"
               height="300"
               width="350"
@@ -78,7 +81,7 @@
           </div>
           <div class="image-container">
             <img
-              src="images/image-six.webp"
+              src="public/images/image-six.webp"
               alt="image-six"
               height="300"
               width="350"
@@ -119,7 +122,60 @@
       <section class="about-us">About Us</section>
 
       <!-- our contact us -->
-      <section class="contact-us">Contact Us</section>
+      <section class="contact-us">
+        <h1 class="header">Contact Our Team</h1>
+        <form class="form">
+          <!-- names -->
+          <div class="names">
+            <div class="first-name">
+              <label class="first-name-label">First Name</label>
+              <input
+                class="first-name-input"
+                type="text"
+                placeholder="Enter your First Name"
+              />
+            </div>
+
+            <div class="last-name">
+              <label class="last-name-label">Last Name</label>
+              <input
+                class="last-name-input"
+                type="text"
+                placeholder="Enter your Last Name"
+              />
+            </div>
+          </div>
+
+          <!-- email & phone -->
+          <div class="contact">
+            <div class="email">
+              <label class="email-label">Email</label>
+              <input
+                class="email-input"
+                type="text"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="phone">
+              <label class="phone-label">Phone</label>
+              <input
+                class="phone-input"
+                type="number"
+                placeholder="Enter your Phone Number"
+              />
+            </div>
+          </div>
+
+          <!-- text message -->
+          <div class="message">
+            <textarea rows="5" class="text-area" placeholder="Enter your message here" ></textarea>
+          </div>
+
+          <!-- button -->
+           <button type="submit" class="form-button">Submit</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
